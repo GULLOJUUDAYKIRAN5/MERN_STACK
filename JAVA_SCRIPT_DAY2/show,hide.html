@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jQuery Example</title>
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>  
+  <h1>jQUERY</h1>
+  <div class="hello">
+    <input type="text" placeholder="enter name"><br><br>
+    <button id="showBtn">Show</button><br>
+    <button id="hideBtn">Hide</button>
+  </div>
+
+  <script>
+    $(document).ready(function(){
+      // Hide button functionality
+      $("#hideBtn").click(function(){
+        $("input").hide();
+      });
+
+      // Show button functionality
+      $("#showBtn").click(function(){
+        $("input").show();
+      });
+    });
+  </script>
+</body>
+</html>

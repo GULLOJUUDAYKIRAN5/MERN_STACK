@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+       .highlight {
+  background-color: yellow;
+  border: 2px solid black;
+  padding: 10px;
+  margin-left: 50%;
+}
+.high {
+  background-color: aqua;
+  border: 2px solid black;
+  padding: 10px;
+  margin-left: 50%;
+}
+    </style>
+</head>
+<body>
+    <input type="text" placeholder="enter the list">
+    <p>hello everyone</p>
+    <div class="box">
+<h1>hello guys</h1>
+    </div>
+    <button id ='btn'>ADD</button>
+
+    <script>
+    $(document).ready(function(){
+
+                $("#btn").hover(
+                    function()
+                    {
+                            $("p").fadeOut();   // fades paragraph
+                            $("h1").css("color", "red");   // changes h1 color
+                            $(".box").addClass("highlight").removeClass('high'); // toggles class
+                    },
+
+                    function()
+                    {
+                        $('p').fadeIn();
+                        $('h1').css('color','green');
+                        $(".box").addClass("high").removeClass('highlight');
+
+
+                    });
+                
+                
+
+
+
+
+    }) ;
+
+</script>
+
+
+</body>
+</html>

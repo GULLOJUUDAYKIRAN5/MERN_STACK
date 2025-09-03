@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+     <style>
+        .font{
+            font-style: italic;
+            font-size: medium;
+            font-display: auto;
+        }
+        
+     </style>
+</head>
+<body>
+    <button id="b1">color</button><button id="b3">font</button><button id ='b4'>hide</button><button id="b2">fade</button><button id ='b5'>show</button>
+    <h1 id="h1">hello sir</h1>
+    <h1 id="h2">hello mam</h1>
+    <h1 id="h3">hello srujan</h1>
+    <h1 id="h4">hello prathap</h1>
+<script>
+    $(document).ready(function(){
+
+        $('#b1').click(
+            function()
+            {
+               $('h1').css("color", "red");
+
+            }
+        );
+        $('#b1').dblclick(
+            function(){
+                $('h1').css('color','black')
+            }
+        );
+        $('#b3').click(
+            function()
+            {
+            $('h1').addClass('font')
+            }
+
+        );
+        
+        $('#b4').click(
+            function(){
+                $('h1').hide()
+
+            }
+        );
+        $('#b5').click(
+            function(){
+                $('h1').show()
+
+            }
+        );
+        
+        $('#b2').hover(
+            function(){
+                $('h1').fadeIn()
+            }
+        ,
+        function(){
+            $('h1').fadeOut()
+        });
+        
+
+
+
+
+
+
+
+
+    });
+</script>
+    
+</body>
+</html>
